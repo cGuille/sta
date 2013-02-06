@@ -16,3 +16,15 @@ TODO:
   - Comments;
   - Error handling;
   - Add a functionality to check whether a loaded STA is consistent or not.
+
+
+Try it
+======
+
+If you have a NodeJS environment, you can clone the repo and run the sample script:
+
+    git clone https://github.com/cGuille/sta.git
+    cd sta
+    node test.js
+
+Otherwise, once you have cloned the repo, you can open the sample file [test.html](https://github.com/cGuille/sta/blob/master/test.html) in any recent browser and look into the console to see the output.
