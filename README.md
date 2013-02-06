@@ -1,7 +1,7 @@
 sta
 ===
 
-A JS module to run [State Transition Systems](http://en.wikipedia.org/wiki/State_transition_system) in a NodeJS or browser envirronement.
+A JS module to run [State Transition Systems](http://en.wikipedia.org/wiki/State_transition_system) in a NodeJS or browser environment.
 See 'test.js' if you are looking for a code sample.
 
 even-sta.json is a file representing an STA which has the following properties:
