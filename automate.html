@@ -7,5 +7,59 @@
         <script src="automate.js"></script>
     </head>
     <body>
+        <section>
+            <h3>Configurer un automate :</h3>
+            <p>
+                <span>Symboles :</span>
+                <ul id="symbols"></ul>
+            </p>
+            <p>
+                <span>États :</span><br />
+                <ul id="states"></ul>
+            </p>
+            <p>
+                <span>État initial :</span>
+                <span id="initial-state"></span>
+            </p>
+            <p>
+                <span>États finaux :</span>
+                <ul id="final-states"></ul>
+            </p>
+        </section>
+        <section>
+            <form>
+                <p>
+                    <label for="new-symbol">Ajouter un symbole :</label>
+                    <input type="text" id="new-symbol" placeholder="Exemple : 'a'" maxlength="1" />
+                    <button id="btn-new-symbol">Ajouter</button>
+                </p>
+                <p>
+                    <label for="new-state">Ajouter un état :</label>
+                    <input type="text" id="new-state" placeholder="Exemple : 'state 1'" />
+                    <button id="btn-new-state">Ajouter</button>
+                </p>
+                <p>
+                    <label for="choose-initial-state">Choisir l'état initial :</label>
+                    <select id="choose-initial-state"></select>
+                </p>
+                <p>
+                    <label for="choose-final-state">Choisir les états finaux :</label>
+                    <select multiple id="choose-final-state"></select>
+                </p>
+            </form>
+        </section>
+        <section>
+            <h3>Essayer l'automate :</h3>
+            <form>
+                <label for="word">Entrez le mot à analyser :</label>
+                <input id="word" placeholder="Exemple : 'aaa'" />
+                <span id="result"></span>
+            </form>
+            <h3>Exporter l'automate :</h3>
+            <div>
+                <button>Générer l'automate au format JSON</button>
+                <div><textarea id="dump"></textarea></div>
+            </div>
+        </section>
     </body>
 </html>
