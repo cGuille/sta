@@ -1,0 +1,15 @@
+{
+    "symbols": ["a", "b"],
+    "states": ["even", "odd"],
+    "initialState": "even",
+    "finalStates": ["even"],
+    "transitions": [{
+        "currentState": "even",
+        "symbolRead": ["a", "b"],
+        "nextState": "odd"
+    }, {
+        "currentState": "odd",
+        "symbolRead": ["a", "b"],
+        "nextState": "even"
+    }]
+}
