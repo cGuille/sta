@@ -17,6 +17,10 @@
                 <span>États :</span><br />
                 <ul id="states"></ul>
             </p>
+            <p>
+                <span>Transitions :</span><br />
+                <ul id="transitions"></ul>
+            </p>
         </section>
         <section>
             <div>
@@ -53,6 +57,7 @@
                             <label>État suivant :</label>
                             <select id="transition-out-state"></select>
                         </div>
+                        <button id="btn-new-transition">Ajouter</button>
                     </div>
                 </p>
             </div>
@@ -62,11 +67,11 @@
             <div>
                 <label for="word">Entrez le mot à analyser :</label>
                 <input id="word" placeholder="Exemple : 'aaa'" />
-                <span id="result"></span>
+                <div id="result"></div>
             </div>
             <h3>Exporter l'automate :</h3>
             <div>
-                <button>Générer l'automate au format JSON</button>
+                <button id="btn-to-json">Générer l'automate au format JSON</button>
                 <div><textarea id="dump"></textarea></div>
             </div>
         </section>
