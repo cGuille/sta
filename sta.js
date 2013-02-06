@@ -42,9 +42,7 @@ var _MODULE_NAME_ = 'sta';
         return word.split('').every(this.isValidSymbol.bind(this));
     };
     STA.prototype.readSymbol = function(symbol) {
-        var newState = this.sortedTransitions[this.state][symbol];
-        console.log('read "' + symbol + '": ' + this.state + ' > ' + newState);
-        this.state = newState;
+        this.state = this.sortedTransitions[this.state][symbol];
     };
     STA.prototype.readWord = function(word) {
         word.split('').forEach(this.readSymbol.bind(this));
