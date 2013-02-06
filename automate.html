@@ -27,7 +27,7 @@
             </p>
         </section>
         <section>
-            <form>
+            <div>
                 <p>
                     <label for="new-symbol">Ajouter un symbole :</label>
                     <input type="text" id="new-symbol" placeholder="Exemple : 'a'" maxlength="1" />
@@ -46,15 +46,32 @@
                     <label for="choose-final-state">Choisir les états finaux :</label>
                     <select multiple id="choose-final-state"></select>
                 </p>
-            </form>
+                <p>
+                    <h4>Ajouter une transition :</h4>
+                    <div>
+                        <div>
+                            <label for="transition-in-state">État de départ :</label>
+                            <select id="transition-in-state"></select>
+                        </div>
+                        <div>
+                            <label for="transition-symbols">Symbole(s) lu(s) :</label>
+                            <select multiple id="transition-symbols"></select>
+                        </div>
+                        <div>
+                            <label>État suivant :</label>
+                            <select id="transition-out-state"></select>
+                        </div>
+                    </div>
+                </p>
+            </div>
         </section>
         <section>
             <h3>Essayer l'automate :</h3>
-            <form>
+            <div>
                 <label for="word">Entrez le mot à analyser :</label>
                 <input id="word" placeholder="Exemple : 'aaa'" />
                 <span id="result"></span>
-            </form>
+            </div>
             <h3>Exporter l'automate :</h3>
             <div>
                 <button>Générer l'automate au format JSON</button>
