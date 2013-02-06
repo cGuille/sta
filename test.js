@@ -18,6 +18,6 @@
         console.log('Is this word valid? ' + (evenSta.isValidWord(word) ? 'Yes !' : 'No.'));
         evenSta.readWord(word);
         console.log('Is this word accepted? ' + (evenSta.accept() ? 'Yes !' : 'No.'));
-        console.log();
+        console.log('');
     });
 }());

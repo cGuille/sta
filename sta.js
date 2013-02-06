@@ -1,4 +1,4 @@
-// STA stands for State Transition System
+
 var _MODULE_NAME_ = 'sta';
 
 (function (exports) {
